@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="TEDxFAST Web Development" />
+
+    <title>TEDxFAST</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/theme.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css'>
+    <link type="text/css" href="fonts/telegrafico.ttf">
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />     <link rel="stylesheet" type="text/css" href="css/tooltip-classic.css" />
+    <link rel="stylesheet" type="text/css" href="css/buttonMorphContent.css" />
+    <link rel="stylesheet" type="text/css" href="css/minimalForm.css" />
+    <link rel="stylesheet" type="text/css" href="css/NLForm.css" />
+    <link rel="stylesheet" type="text/css" href="css/accordion.css" />
+
+    <script src="js/modernizr.custom.63321.js"></script>
+    <!--[if lte IE 7]><style>.support-note .note-ie{display:block;}</style><![endif]-->
+
+</head>
+
+<body style="background: #1d1e21; color: white; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+    <!-- navigation -->
+    <nav class="pages-nav">
+        <div class="pages-nav__item"><a class="link" href="index.html" style="text-decoration: none">Home</a></div>
+        <div class="pages-nav__item"><a class="link" href="about.html" style="text-decoration: none">About</a></div>
+        <div class="pages-nav__item"><a class="link " href="contact.html" style="text-decoration: none">Contact Us</a></div>
+        <!--
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-buy">Where to buy</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">Blog &amp; News</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Contact</a></div>
+-->
+
+        <div class="pages-nav__item pages-nav__item--social">
+            <hr class="style-eight">
+        </div>
+
+        <div class="pages-nav__item"><a class="link link--page" href="#page-faqs" style="text-decoration: none;">FAQs</a></div>
+        <div class="pages-nav__item"><a class="link" href="team.html" style="text-decoration: none;">Team</a></div>
+        <div class="pages-nav__item"><a class="link" href="theme.html" style="text-decoration: none">Theme</a></div>
+        <div class="pages-nav__item"><a class="link" href="speaker.html" style="text-decoration: none">Speakers</a></div>
+         
+
+        <div class="pages-nav__item pages-nav__item--social">
+            <a class="link link--social link--faded" href="https://www.facebook.com/TEDxFASTkhi" target="_blank"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+        </div>
+    </nav>
+    <!-- /navigation-->
+    <!-- pages stack -->
+    <div class="pages-stack">
+        <div class="page" id="page-faqs">
+            <header class="bp-header cf">
+                <h1 class="bp-header__title">FAQs</h1>
+            </header>
+            <div style="width: 85%; margin: 0 auto;">
+                <div class="accordion">
+                    <dl>
+                        <dt><a class="accordionTitle" href="#">What and where is TEDxFAST 2016?</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <p>This exciting event is scheduled for <span style="color: white">11<sup>th</sup> of November 2016 </span> at <span style="color: white">FAST University Karachi Campus</span>. The campus is on National Highway and the event will run from 8 am to 4 pm.</p>
+                        </dd>
+                        <dt><a class="accordionTitle" href="#">How can I attend TEDxFAST 2016?</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <div style="padding: 1em 2em 1em 2em;">
+                                <p>Attending is as simple as answering the questions below. By registering your name will be added to the list of people who will be considered for the TEDxFAST guest list of 2016, also you will be kept informed about any news on the TEDx event on November 8th 2016.
+                                    <br>
+                                    <br> If you receive an email asking you to confirm your seat, then you’re invited and you can come. However, you need to confirm your seat before the due date mentioned in the email.</p>
+                                <form id="theForm" class="simform" action="action2.php" method="post" autocomplete="on" style="height: 25%; width: 25%">
+                                    <div class="simform-inner">
+                                        <ol class="questions">
+
+                                            <li>
+                                                <span><label for="q1">What's your Full Name?</label></span>
+                                                <input id="q1" name="name" type="text" />
+                                            </li>
+
+                                            <li>
+                                                <span><label for="q2">What's your email?</label></span>
+                                                <input id="q2" name="email" type="text" />
+                                            </li>
+
+                                            <li>
+                                                <span><label for="q2">What's your city?</label></span>
+                                                <input id="q2" name="city" type="text" />
+                                            </li>
+
+                                            <li>
+                                                <span><label for="q2">What's your address?</label></span>
+                                                <input id="q2" name="address" type="text" />
+                                            </li>
+
+                                            <li>
+                                                <span><label for="q2">What's your contact ?</label></span>
+                                                <input id="q2" name="contact" type="text" />
+                                            </li>
+                                            <li>
+                                                <span><label for="q3">Why do you want to attend?</label></span>
+                                                <input id="q3" name="message" type="text" />
+                                            </li>
+
+                                            <li><span><label><button width="200" style="font-size:7pt;color:white;background-color:gray;border:2px solid 	#A9A9A9;padding:2px"  name='Submit' value='Submit'  >Submit Answer</button></label></span></li>
+
+                                        </ol>
+                                        <!-- /questions -->
+
+                                        <div class="controls">
+                                            <button class="next"></button>
+
+                                            <div class="progress"></div>
+                                            <span class="number">
+                                    <span class="number-current"></span>
+                                            <span class="number-total"></span>
+                                            </span>
+                                            <span class="error-message"></span>
+                                        </div>
+                                        <!-- / controls -->
+                                    </div>
+                                    <!-- /simform-inner -->
+                                    <span class="final-message"></span>
+
+                                </form>
+                                <!-- /simform -->
+                            </div>
+                        </dd>
+                        <dt><a class="accordionTitle" href="#">Where do I find more information on the TEDxFAST 2016 Program?</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <p>You can find more information about TEDxFAST 2016 by contacting us. Our contact details are provided <a href="contact.html">here</a>.</p>
+                        </dd>
+                        <dt><a class="accordionTitle" href="#">How can I recommend a speaker/theme for TEDxFAST 2016?</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <div style="padding: 1em 2em 1em 2em;">
+                                <p>We realize the value of our audience and would be delighted to hear who you think is an appropriate speaker/theme for the event. We welcome your suggestions and requests. Let us know by filling out the information below. Remember the event is only as good as the people participating in it!</p>
+                                <form id="nl-form" action="action7.php" method="post" class="nl-form">
+                                    My recommended
+                                    <select>
+                                        <option value="1" selected>speaker/theme</option>
+                                        <option value="2">speaker</option>
+                                        <option value="3">theme</option>
+                                    </select>
+                                    is
+                                    <input type="text" value=""  name="theme" placeholder="TEDxFAST Speaker/Theme" />
+                                    <div class="nl-submit-wrap">
+                                        <button class="nl-submit" type="submit" value="submit">Submit my recommendation</button>
+                                    </div>
+                                    <div class="nl-overlay"></div>
+                                </form>
+                            </div>
+                        </dd>
+                        <dt><a class="accordionTitle" href="#">How do I subscribe to email updates?</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <p>We are constantly working to improve the event and provide you an unforgettable experience. So if you want to get our event updates kindly subscribe by visiting our <a href="index.html">home page</a>.</p>
+                        </dd>
+                        <dt><a class="accordionTitle" href="#">I wish to unsubscribe, what do I do?</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <div style="padding: 1em 2em 1em 2em;">
+                                <p>Provide your email address below and you’ll stop receiving updates.</p>
+                                <form id="theForm2" action="action3.php" method="post" class="simform" autocomplete="off" style="height: 25%; width: 25%">
+                                    <div class="simform-inner">
+                                        <ol class="questions">
+                                            <li>
+                                                <span><label for="q1">What's your Email Address?</label></span>
+                                                <input id="q1" name="email" type="text" />
+                                            </li>
+                                            <li><span><label><button width="200" style="font-size:7pt;color:white;background-color:gray;border:2px solid 	#A9A9A9;padding:2px"  name='Submit' value='Submit'  >Submit Answer</button></label></span></li>
+
+                                        </ol>
+                                        <!-- /questions -->
+
+                                        <div class="controls">
+                                            <button class="next"></button>
+                                            <div class="progress"></div>
+                                            <span class="number">
+                                    <span class="number-current"></span>
+                                            <span class="number-total"></span>
+                                            </span>
+                                            <span class="error-message"></span>
+                                        </div>
+                                        <!-- / controls -->
+                                    </div>
+                                    <!-- /simform-inner -->
+                                    <span class="final-message"></span>
+                                </form>
+                                <!-- /simform -->
+                            </div>
+                        </dd>
+                        <dt><a class="accordionTitle" href="#">How can I be part of TEDxFAST?</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <div style="padding: 1em 2em 1em 2em;">
+                                <p>We’re so glad you’re considering joining our team. Simply fill in the details below and we’ll shortly get in contact with you.</p>
+                                <form id="theForm1" action="action4.php" method="post" class="simform" autocomplete="off" style="height: 25%; width: 25%">
+                                    <div class="simform-inner">
+                                        <ol class="questions">
+                                            <li>
+                                                <span><label for="q1">What's your Full Name?</label></span>
+                                                <input id="q1" name="name" type="text" />
+                                            </li>
+                                            <li>
+                                                <span><label for="q2">What's your Email Address?</label></span>
+                                                <input id="q2" name="email" type="text" />
+                                            </li>
+                                            <li><span><label><button width="200" style="font-size:7pt;color:white;background-color:gray;border:2px solid 	#A9A9A9;padding:2px"  name='Submit' value='Submit'  >Submit Answer</button></label></span></li>
+
+                                        </ol>
+                                        <!-- /questions -->
+
+                                        <div class="controls">
+                                            <button class="next"></button>
+                                            <div class="progress"></div>
+                                            <span class="number">
+                                    <span class="number-current"></span>
+                                            <span class="number-total"></span>
+                                            </span>
+                                            <span class="error-message"></span>
+                                        </div>
+                                        <!-- / controls -->
+                                    </div>
+                                    <!-- /simform-inner -->
+                                    <span class="final-message"></span>
+                                </form>
+                                <!-- /simform -->
+                            </div>
+                        </dd>
+                        <dt><a class="accordionTitle" href="#">How do I help in sponsoring the event?</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <p>If you’d like to help sponsor the event we will definitely have a look at you. Please fill out the <a href="FullscreenForm/index.html">Sponsor</a> form and someone will get in contact with you.</p>
+                        </dd>
+                        <dt><a class="accordionTitle" href="#">How can I organize my own TEDx-event?</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <p>Interested in organizing your own TEDx-event? Find all details at <a href="http://www.ted.com/tedx" target="_blank">http://www.ted.com/tedx</a></p>
+                        </dd>
+                        <dt><a class="accordionTitle" href="#">I have a question that hasn’t been answered, what do I do?</a></dt>
+                        <dd class="accordionItem accordionItemCollapsed">
+                            <p>Please check out this <a href="contact.html">page</a> to see who you could contact best with your question.</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <!--footer for copyright-->
+            <div id="tm-footer" class="tm-footer uk-block uk-block-secondary uk-contrast">
+                <div class="uk-container uk-container-center">
+
+                    <section class="uk-grid uk-grid-match" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-1">
+
+                            <div class="uk-panel   ">
+
+                                <div class="uk-grid uk-flex-center" data-uk-margin="cls:'uk-margin-large-top'">
+
+                                    <div class="uk-width-medium-1-2">
+                                        <h2>About TEDx</h2>
+                                        <p class="uk-text-justify" style="font-size:14px">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxFAST, where x = independently organized TED event. At our TEDxFAST event, TEDTalks video and live speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized. Learn more about TEDx at <a href="http://www.ted.com/about/programs-initiatives/tedx-program" style="color: #E62B1E; font-weight: bold;" target="_blank">TEDx Talks.</a></p>
+                                    </div>
+
+                                    <div class="uk-width-medium-1-2 uk-text-center">
+                                        <a href="index.html"><img src="images/TEDxFASTlogoREV.png" alt="TEDx FAST logo" height="100" width="300"></a>
+
+                                        <br>
+                                        <br>
+                                        <ul class="uk-grid uk-grid-medium uk-flex uk-flex-center">
+                                            <li>
+                                                <a href="https://www.facebook.com/TEDxFASTkhi" target="_blank" class="uk-icon-hover uk-icon-small uk-icon-facebook"></a>
+                                            </li>
+
+                                        </ul>
+                                        <div class="uk-margin-large-top uk-text-center">
+                                            <p class="uk-margin-bottom-remove">©️ 2016 | TEDxFAST
+                                                <br>
+                                                <span class="uk-text-small">This independent TEDx event is operated under license from TED.</span></p>
+                                        </div>
+
+                                    </div>
+                                    <!-- better note -->
+                                    <p>
+                                        <br>
+                                        <br>
+                                        <span class="text-center">Developed by 
+                                            <span class="tooltip1 tooltip1-effect-2">
+                                                <span class="tooltip1-item"><a href="team.html">TEDxFAST Web development</a></span>
+                                                <span class="tooltip1-content clearfix">
+                                                    <img src="images/fb-male.jpg" style="height: 100px; width: 100px; margin: 10px; border-radius: 50%" />
+                                                    <img src="images/fb-male.jpg" style="height: 100px; width: 100px; margin: 10px; border-radius: 50%" />
+                                                    <img src="images/fb-male.jpg" style="height: 100px; width: 100px; margin: 10px; border-radius: 50%" />
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+            <!--footer end for copyright-->
+        </div>
+        <div class="page"></div>
+        <div class="page"></div>
+    </div>
+    <!-- /pages-stack -->
+    <button class="menu-button"><span>Menu</span></button>
+
+    <!-- Scripts -->
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.cbpNTAccordion.min.js"></script>
+    <script>
+        $(function() {
+            /*
+            - how to call the plugin:
+            $( selector ).cbpNTAccordion( [options] );
+            - destroy:
+            $( selector ).cbpNTAccordion( 'destroy' );
+            */
+
+            $('#cbp-ntaccordion').cbpNTAccordion();
+
+        });
+    </script>
+    <script src="js/minimalFormClassie.js"></script>
+    <script src="js/stepsForm.js"></script>
+    <script>
+        var theForm = document.getElementById('theForm');
+        var theForm1 = document.getElementById('theForm1');
+        var theForm2 = document.getElementById('theForm2');
+
+        new stepsForm(theForm, {
+            onSubmit: function(form) {
+                // hide form
+                classie.addClass(theForm.querySelector('.simform-inner'), 'hide');
+
+                /*
+                form.submit()
+                or
+                AJAX request (maybe show loading indicator while we don't have an answer..)
+                */
+
+                // let's just simulate something...
+                var messageEl = theForm.querySelector('.final-message');
+
+                messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+                classie.addClass(messageEl, 'show');
+            }
+        });
+        new stepsForm(theForm1, {
+            onSubmit: function(form) {
+                // hide form
+                classie.addClass(theForm1.querySelector('.simform-inner'), 'hide');
+
+                /*
+                form.submit()
+                or
+                AJAX request (maybe show loading indicator while we don't have an answer..)
+                */
+
+                // let's just simulate something...
+                var messageEl = theForm1.querySelector('.final-message');
+
+            }
+        });
+        new stepsForm(theForm2, {
+            onSubmit: function(form) {
+                // hide form
+                classie.addClass(theForm2.querySelector('.simform-inner'), 'hide');
+
+                /*
+                form.submit()
+                or
+                AJAX request (maybe show loading indicator while we don't have an answer..)
+                */
+
+                // let's just simulate something...
+                var messageEl = theForm2.querySelector('.final-message');
+                messageEl.innerHTML = 'Thank you! You\'ll stop receiving updates now.';
+                classie.addClass(messageEl, 'show');
+            }
+        });
+    </script>
+    <script src="js/nlform.js"></script>
+    <script>
+        var nlform = new NLForm(document.getElementById('nl-form'));
+    </script>
+    <script>
+        /*!
+         * classie - class helper functions
+         * from bonzo https://github.com/ded/bonzo
+         * 
+         * classie.has( elem, 'my-class' ) -> true/false
+         * classie.add( elem, 'my-new-class' )
+         * classie.remove( elem, 'my-unwanted-class' )
+         * classie.toggle( elem, 'my-class' )
+         */
+
+        /*jshint browser: true, strict: true, undef: true */
+        /*global define: false */
+
+        (function(window) {
+
+            'use strict';
+
+            // class helper functions from bonzo https://github.com/ded/bonzo
+
+            function classReg(className) {
+                return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+            }
+
+            // classList support for class management
+            // altho to be fair, the api sucks because it won't accept multiple classes at once
+            var hasClass, addClass, removeClass;
+
+            if ('classList' in document.documentElement) {
+                hasClass = function(elem, c) {
+                    return elem.classList.contains(c);
+                };
+                addClass = function(elem, c) {
+                    elem.classList.add(c);
+                };
+                removeClass = function(elem, c) {
+                    elem.classList.remove(c);
+                };
+            } else {
+                hasClass = function(elem, c) {
+                    return classReg(c).test(elem.className);
+                };
+                addClass = function(elem, c) {
+                    if (!hasClass(elem, c)) {
+                        elem.className = elem.className + ' ' + c;
+                    }
+                };
+                removeClass = function(elem, c) {
+                    elem.className = elem.className.replace(classReg(c), ' ');
+                };
+            }
+
+            function toggleClass(elem, c) {
+                var fn = hasClass(elem, c) ? removeClass : addClass;
+                fn(elem, c);
+            }
+
+            var classie = {
+                // full names
+                hasClass: hasClass,
+                addClass: addClass,
+                removeClass: removeClass,
+                toggleClass: toggleClass,
+                // short names
+                has: hasClass,
+                add: addClass,
+                remove: removeClass,
+                toggle: toggleClass
+            };
+
+            // transport
+            if (typeof define === 'function' && define.amd) {
+                // AMD
+                define(classie);
+            } else {
+                // browser global
+                window.classie = classie;
+            }
+
+        })(window);
+
+        //fake jQuery
+        var $ = function(selector) {
+            return document.querySelector(selector);
+        }
+        var accordion = $('.accordion');
+
+        //add event listener to all anchor tags with accordion title class
+        accordion.addEventListener("click", function(e) {
+            if (e.target && e.target.nodeName == "A") {
+                var classes = e.target.className.split(" ");
+                if (classes) {
+                    for (var x = 0; x < classes.length; x++) {
+                        if (classes[x] == "accordionTitle") {
+                            var title = e.target;
+
+                            //next element sibling needs to be tested in IE8+ for any crashing problems
+                            var content = e.target.parentNode.nextElementSibling;
+
+                            //use classie to then toggle the active class which will then open and close the accordion
+
+                            classie.toggle(title, 'accordionTitleActive');
+                            //this is just here to allow a custom animation to treat the content
+                            if (classie.has(content, 'accordionItemCollapsed')) {
+                                if (classie.has(content, 'animateOut')) {
+                                    classie.remove(content, 'animateOut');
+                                }
+                                classie.add(content, 'animateIn');
+
+                            } else {
+                                classie.remove(content, 'animateIn');
+                                classie.add(content, 'animateOut');
+                            }
+                            //remove or add the collapsed state
+                            classie.toggle(content, 'accordionItemCollapsed');
+
+                        }
+                    }
+                }
+
+            }
+        });
+    </script>
+    <!-- Scripts -->
+</body>
+
+</html>

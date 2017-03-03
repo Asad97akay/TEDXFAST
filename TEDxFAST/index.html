@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="TEDxFAST Web development" />
+
+    <title>TEDxFAST</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css'>
+    <link type="text/css" href="fonts/telegrafico.ttf">
+    <link rel="stylesheet" type="text/css" href="css/stapel.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/tooltip-classic.css" />
+    <link rel="stylesheet" type="text/css" href="css/buttonMorphComponent.css" />
+    <link rel="stylesheet" type="text/css" href="css/buttonMorphContent.css" />
+    <link rel="stylesheet" type="text/css" href="css/buttonMorphDemo.css" />
+    <link rel="stylesheet" type="text/css" href="css/progressButton.css" />
+    <link rel="stylesheet" type="text/css" href="css/minimalForm.css" />
+    <link rel="stylesheet" type="text/css" href="css/NLForm.css" />
+    <link rel="stylesheet" type="text/css" href="css/sliderStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/photostack.css" />
+    <link rel="stylesheet" type="text/css" href="css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/animatedCheckboxes.css" />
+    <link rel="stylesheet" type="text/css" href="css/timer.css" />
+
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/modernizr.custom.63321.js"></script>
+    <!--[if lte IE 7]><style>.support-note .note-ie{display:block;}</style><![endif]-->
+    <script src="js/progressBtnmodernizr.js"></script>
+    <link rel="stylesheet" href="compiled/flipclock.css">
+    <script src="compiled/flipclock.js"></script>
+    
+    <style>
+        @media screen and (max-width: 48em) {
+            #blank{
+                margin-top: -100px;
+            }
+            #blank2{
+                margin-top: -100px;
+            }
+        }
+    </style>
+
+</head>
+
+<body style="background: #1d1e21; color: white">
+    <!-- navigation -->
+    <nav class="pages-nav">
+        <div class="pages-nav__item"><a class="link link--page" href="#page-home" style="text-decoration: none">Home</a></div>
+        <div class="pages-nav__item"><a class="link" href="about.html" style="text-decoration: none">About</a></div>
+        <div class="pages-nav__item"><a class="link " href="contact.html" style="text-decoration: none">Contact Us</a></div>
+        <!--
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-buy">Where to buy</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-blog">Blog &amp; News</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Contact</a></div>
+-->
+
+        <div class="pages-nav__item pages-nav__item--social">
+            <hr class="style-eight">
+        </div>
+
+        <div class="pages-nav__item"><a class="link" href="faqs.html" style="text-decoration: none;">FAQs</a></div>
+        <div class="pages-nav__item"><a class="link" href="team.html" style="text-decoration: none;">Team</a></div>
+        <div class="pages-nav__item"><a class="link" href="theme.html" style="text-decoration: none">Theme</a></div>
+        <div class="pages-nav__item"><a class="link" href="speaker.html" style="text-decoration: none">Speakers</a></div>
+         
+
+        <div class="pages-nav__item pages-nav__item--social">
+            <a class="link link--social link--faded" href="https://www.facebook.com/TEDxFASTkhi" target="_blank"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+        </div>
+    </nav>
+    <!-- /navigation-->
+    <!-- pages stack -->
+    <div class="pages-stack">
+        <!-- page -->
+        <div class="page" id="page-home">
+            <!-- Blueprint header -->
+            <header class="bp-header cf">
+                <div class="row">
+                    <div class="col-sm-8 col-xs-12">
+                        <span class="bp-header__present" style="color: white">November 8, 2016</span>
+                        <a href="https://www.facebook.com/TEDxFASTkhi" target="_blank"><img src="images/TEDxFASTlogoREV.png" style="height: 30%; width: 30%"></a>
+                        <p class="bp-header__desc" style="color: white">Auditorium, Department of Electrical Engineering.</p>
+                    </div>
+                    <div class="col-sm-4 col-xs-4">
+                        <div class="morph-button morph-button-modal morph-button-modal-2 morph-button-fixed">
+                            <button type="button" style="border: none" id="subs"><span>Subscribe to our Newsletter</span></button>
+                            <div class="morph-content">
+                                <div>
+                                    <div class="content-style-form content-style-form-4">
+                                        <span class="icon icon-close">Close the dialog</span>
+                                        <h2 class="morph-clone" style="color: white; line-height: normal;">Get Notified</h2>
+
+                                        <form action="sendmail.php" method="POST">
+                                            <p>
+                                                <label>Your Email Address</label>
+                                                <input type="text" id="email" name="email" /><span>We promise, we won't send you any spam. Just love.</span></p>
+                                            <p>
+                                                <button class="progress-button" data-style="fill" data-horizontal id="submit">Submit</button>
+                                            </p>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- morph-button -->
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- Slider Start -->
+            <div style="width: 100%">
+                <!-- Top Navigation -->
+                <section id="photostack-1" class="photostack photostack-start">
+                    <div>
+                        <figure>
+                            <a href="https://www.facebook.com/TEDxFASTkhi" target="_blank" class="photostack-img"><img src="images/slider-tedxfast.png" alt="logo" /></a>
+                            <figcaption>
+                                <h2 class="photostack-title">TEDxFAST</h2>
+                                <div class="photostack-back">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip".</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <a class="photostack-img"><img src="images/slider-mascot.png" alt="mascot" /></a>
+                            <figcaption>
+                                <h2 class="photostack-title">Mascot</h2>
+                                <div class="photostack-back">
+                                    <p>What might be right for you may not be right for some. And we know Flipper lives in a world full of wonder flying there-under under the sea.</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure data-shuffle-iteration="2">
+                            <a class="photostack-img"><img src="images/slider-theme1.png" alt="theme" /></a>
+                            <figcaption>
+                                <h2 class="photostack-title">Theme</h2>
+                                <div class="photostack-back">
+                                    <p>I have never been to a place so serene in my entire life before. Swimming in clear waters opened my mind to nature and reminded me of my and <span>eveybody</span> everybody else's mortality.</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure data-shuffle-iteration="3">
+                            <a href="http://goo.gl/fhwlSP" class="photostack-img"><img src="images/slider-fast.jpg" alt="fast" /></a>
+                            <figcaption>
+                                <h2 class="photostack-title">FAST - NUCES (Karachi)</h2>
+                                <div class="photostack-back">
+                                    <p>These Happy Days are yours and mine Happy Days. It's a beautiful day in this neighborhood a beautiful day for a neighbor. Would you be mine?</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure data-dummy>
+                            <a href="#" class="photostack-img"><img src="images/14572044_560007177521031_662753162_o.jpg" alt="img07" /></a>
+                            <figcaption>
+                                <h2 class="photostack-title">FAST - NUCES</h2>
+                            </figcaption>
+                        </figure>
+                        <figure data-dummy>
+                            <a href="#" class="photostack-img"><img src="images/slider-fountain.jpg" alt="fountain" /></a>
+                            <figcaption>
+                                <h2 class="photostack-title">Fountain</h2>
+                            </figcaption>
+                        </figure>
+                        <figure data-dummy>
+                            <a href="#" class="photostack-img"><img src="images/996727_470711796353403_1095296685_n.jpg" alt="fast1" /></a>
+                            <figcaption>
+                                <h2 class="photostack-title">FAST - NUCES</h2>
+                            </figcaption>
+                        </figure>
+                        <figure data-dummy>
+                            <a href="#" class="photostack-img"><img src="images/slider-fast2.jpg" alt="fast" /></a>
+                            <figcaption>
+                                <h2 class="photostack-title">FAST - NUCES</h2>
+                            </figcaption>
+                        </figure>
+                        <figure data-dummy>
+                            <a href="#" class="photostack-img"><img src="images/slider-corridor.jpg" alt="corridor" /></a>
+                            <figcaption>
+                                <h2 class="photostack-title">FAST - NUCES</h2>
+                            </figcaption>
+                        </figure>
+                        <figure data-dummy>
+                            <a href="#" class="photostack-img"><img src="images/slider-fast3.jpg" alt="fast" /></a>
+                            <figcaption>
+                                <h2 class="photostack-title">FAST - NUCES</h2>
+                            </figcaption>
+                        </figure>
+                        <figure data-dummy>
+                            <a href="#" class="photostack-img"><img src="images/slider-lib.jpg" alt="library" /></a>
+                            <figcaption>
+                                <h2 class="photostack-title">Library</h2>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <!-- /container -->
+            <script src="js/classie.js"></script>
+            <script src="js/photostack.js"></script>
+            <script>
+                new Photostack(document.getElementById('photostack-1'), {
+                    callback: function(item) {
+                        //console.log(item)
+                    }
+                });
+            </script>
+            <!-- Slider End -->
+            
+            
+            <div id="timer-parent" style="background-image: url('images/timer1.jpg'); background-size: cover; height: 300px; background-attachment: fixed; background-position: center; background-repeat: no-repeat;">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div style="height: 70px" id="blank"></div>
+                        <div class="morph-button morph-button-overlay morph-button-fixed" style="font-family: 'Lato', Arial, sans-serif">
+                            <button type="button">Want to attend?</button>
+                            <div class="morph-content">
+                                <div>
+                                    <div class="content-style-overlay">
+                                        <span class="icon icon-close">Close the overlay</span>
+                                        <h2 style="color: white; margin-top: -50px">Tell us about yourself</h2>
+                                        <p style="font-size: 0.7em; text-align: center; margin-top: -30px">All information submitted through this form will be treated as confidential and under no circumstances will it be shared with anyone, less organizers of TEDxFAST. <br>Organizers of TEDxFAST retain the final decision regarding acceptance/rejection of any candidate. Only successful candidates will be contacted
+                                        </p>
+                                        <div class="content-style-form content-style-form-1">
+                                            <form class="ac-custom ac-radio ac-fill" action="action5.php" method="post">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-6">
+                                                        <p>
+                                                            <label>Full Name</label>
+                                                            <input type="text" placeholder="John Doe"  name="name" required/>
+                                                        </p>
+                                                        <p>
+                                                            <label>Email</label>
+                                                            <input type="email" placeholder="johndoe@example.com"  name="email" required/>
+                                                        </p>
+                                                        <p>
+                                                            <label>City</label>
+                                                            <input type="text" placeholder="Karachi" name="city" required/>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-6">
+                                                        <p>
+                                                            <label>Contact number</label>
+                                                            <input type="number" placeholder="(+92) 123 456 7890" name="contact" required/>
+                                                        </p>
+                                                        <p>
+                                                            <label>Address</label>
+                                                            <input type="text" name="address" required/>
+                                                        </p>
+                                                        <p>
+                                                            <label>Why do you want to attend?</label>
+                                                            <input type="text" name="message" />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <label style="text-align: center">Association with FAST</label>
+                                                <div class="row">
+                                                    <div class="col-sm-3 col-xs-6">
+                                                        <ul>
+                                                            <li><input id="r1" name="radio" type="radio" value="FASTIAN"><label for="r1">FASTian</label></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-6">
+                                                        <ul>
+                                                            <li><input id="r2" name="radio" type="radio" value="ALUMNI"><label for="r2">ALUMNI</label></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-6">
+                                                        <ul>
+                                                            <li><input id="r3" name="radio" type="radio" value="FACULTY"><label for="r3">FACULTY</label></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-3 col-xs-6">
+                                                        <ul>
+                                                            <li><input id="r4" name="radio" type="radio" value="NONE"><label for="r4">NONE</label></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-xs-4"></div>
+                                                    <div class="col-sm-4 col-xs-4">
+                                                        <input class="button" placeholder='Send' type='submit'>
+                                                    </div>
+                                                    <div class="col-sm-4 col-xs-4"></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="js/svgcheckbx.js"></script>
+                    <div class="col-sm-6">
+                        <div style="height: 70px" id="blank2"></div>
+                        <div id="countdown" class="countdown">
+                            <div class="row">
+                                <div class="countdown-item col-sm-3 col-xs-3">
+                                    <div id="countdown-days" class="countdown-number">--</div>
+                                    <div class="countdown-label">days</div>
+                                </div>
+                                <div class="countdown-item col-sm-3 col-xs-3">
+                                    <div id="countdown-hours" class="countdown-number">--</div>
+                                    <div class="countdown-label">hours</div>
+                                </div>
+                                <div class="countdown-item col-sm-3 col-xs-3">
+                                    <div id="countdown-minutes" class="countdown-number">--</div>
+                                    <div class="countdown-label">minutes</div>
+                                </div>
+                                <div class="countdown-item col-sm-3 col-xs-3">
+                                    <div id="countdown-seconds" class="countdown-number">--</div>
+                                    <div class="countdown-label">seconds</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+            
+            <!-- Timer without registration 
+            <div id="timer-parent" style="background-image: url('images/timer1.jpg'); background-size: cover; height: 300px; background-attachment: fixed; background-position: center; background-repeat: no-repeat;">
+                        <h1 style="font-family: 'densethin'; padding-top: 20px; font-size: 4em; text-align: center; color: white; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);">"Starting up the right way"</h1>
+                        <div id="countdown" class="countdown" style="margin-top: 45px">
+                            <div class="row">
+                                <div class="countdown-item col-sm-3 col-xs-6">
+                                    <div id="countdown-days" class="countdown-number">--</div>
+                                    <div class="countdown-label">days</div>
+                                </div>
+                                <div class="countdown-item col-sm-3 col-xs-6">
+                                    <div id="countdown-hours" class="countdown-number">--</div>
+                                    <div class="countdown-label">hours</div>
+                                </div>
+                                <div class="countdown-item col-sm-3 col-xs-6">
+                                    <div id="countdown-minutes" class="countdown-number">--</div>
+                                    <div class="countdown-label">minutes</div>
+                                </div>
+                                <div class="countdown-item col-sm-3 col-xs-6">
+                                    <div id="countdown-seconds" class="countdown-number">--</div>
+                                    <div class="countdown-label">seconds</div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+             -->
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            <script src="js/timer/jquery.cookie.js"></script>
+            <script src="js/timer/jquery.countdown.min.js"></script>
+            <script src="js/timer/front.js"></script>
+
+            <!--footer for copyright-->
+            <div id="tm-footer" class="tm-footer uk-block uk-block-secondary uk-contrast">
+                <div class="uk-container uk-container-center">
+
+                    <section class="uk-grid uk-grid-match" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-1">
+
+                            <div class="uk-panel   ">
+
+                                <div class="uk-grid uk-flex-center" data-uk-margin="cls:'uk-margin-large-top'">
+
+                                    <div class="uk-width-medium-1-2">
+                                        <h2>About TEDx</h2>
+                                        <p class="uk-text-justify" style="font-size:14px">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxFAST, where x = independently organized TED event. At our TEDxFAST event, TEDTalks video and live speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized. Learn more about TEDx at <a href="http://www.ted.com/about/programs-initiatives/tedx-program" style="color: #E62B1E; font-weight: bold;" target="_blank">TEDx Talks.</a></p>
+                                    </div>
+
+                                    <div class="uk-width-medium-1-2 uk-text-center">
+                                        <a href="index.html"><img src="images/TEDxFASTlogoREV.png" alt="TEDx FAST logo" height="100" width="300"></a>
+
+                                        <br>
+                                        <br>
+                                        <ul class="uk-grid uk-grid-medium uk-flex uk-flex-center">
+                                            <li>
+                                                <a href="https://www.facebook.com/TEDxFASTkhi" target="_blank" class="uk-icon-hover uk-icon-small uk-icon-facebook"></a>
+                                            </li>
+
+                                        </ul>
+                                        <div class="uk-margin-large-top uk-text-center">
+                                            <p class="uk-margin-bottom-remove">©️ 2016 | TEDxFAST
+                                                <br>
+                                                <span class="uk-text-small">This independent TEDx event is operated under license from TED.</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <!-- better note -->
+                                    <p>
+                                        <br>
+                                        <br>
+                                        <span class="text-center">Developed by Website Management Team
+                                        </span>
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+            <!--footer end for copyright-->
+        </div>
+        <!-- /page -->
+        <div class="page"></div>
+        <div class="page"></div>
+    </div>
+    <!-- /pages-stack -->
+
+    <button class="menu-button" id="menubtn"><span>Menu</span></button>
+
+    <!-- Scripts -->
+
+    <!-- classie.js by @desandro: https://github.com/desandro/classie -->
+    <script src="js/classie.js"></script>
+
+    <!-- for the blur effect -->
+    <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+    <script src="js/main.js"></script>
+    <script src="js/progressBtnclassie.js"></script>
+    <script src="js/progressButton.js"></script>
+    <script>
+        [].slice.call(document.querySelectorAll('button.progress-button')).forEach(function(bttn) {
+            new ProgressButton(bttn, {
+                callback: function(instance) {
+                    var progress = 0,
+                        interval = setInterval(function() {
+                            progress = Math.min(progress + Math.random() * 0.1, 1);
+                            instance._setProgress(progress);
+
+                            if (progress === 1) {
+                                instance._stop(1);
+                                clearInterval(interval);
+                                document.getElementById("submit").style.backgroundColor = '#148544';
+                                document.getElementById("submit").style.color = 'white';
+                                document.getElementById("submit").textContent = 'SUBMITTED!';
+                                document.getElementById("submit").disabled = true;
+                            }
+                        }, 200);
+                }
+            });
+        });
+    </script>
+    <script src="js/uiMorphingButton_fixed.js"></script>
+    <script>
+        (function() {
+            var docElem = window.document.documentElement,
+                didScroll, scrollPosition;
+
+            // trick to prevent scrolling when opening/closing button
+            function noScrollFn() {
+                window.scrollTo(scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0);
+            }
+
+            function noScroll() {
+                window.removeEventListener('scroll', scrollHandler);
+                window.addEventListener('scroll', noScrollFn);
+            }
+
+            function scrollFn() {
+                window.addEventListener('scroll', scrollHandler);
+            }
+
+            function canScroll() {
+                window.removeEventListener('scroll', noScrollFn);
+                scrollFn();
+            }
+
+            function scrollHandler() {
+                if (!didScroll) {
+                    didScroll = true;
+                    setTimeout(function() {
+                        scrollPage();
+                    }, 60);
+                }
+            };
+
+            function scrollPage() {
+                scrollPosition = {
+                    x: window.pageXOffset || docElem.scrollLeft,
+                    y: window.pageYOffset || docElem.scrollTop
+                };
+                didScroll = false;
+            };
+
+            scrollFn();
+
+            [].slice.call(document.querySelectorAll('.morph-button')).forEach(function(bttn) {
+                new UIMorphingButton(bttn, {
+                    closeEl: '.icon-close',
+                    onBeforeOpen: function() {
+                        // don't allow to scroll
+                        noScroll();
+                    },
+                    onAfterOpen: function() {
+                        // can scroll again
+                        canScroll();
+                    },
+                    onBeforeClose: function() {
+                        // don't allow to scroll
+                        noScroll();
+                    },
+                    onAfterClose: function() {
+                        // can scroll again
+                        canScroll();
+                    }
+                });
+            });
+
+            // for demo purposes only
+            [].slice.call(document.querySelectorAll('form button')).forEach(function(bttn) {
+                bttn.addEventListener('click', function(ev) {
+                    ev.preventDefault();
+                });
+            });
+        })();
+    </script>
+    <!-- Scripts -->
+</body>
+
+</html>
